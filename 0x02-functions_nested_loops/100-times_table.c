@@ -1,13 +1,9 @@
 #include "main.h"
-
 /**
   *print_times_table - prints the n times table, starting with 0.
-  *
   *@n: checkpoint
-  *
   *Return: table
   */
-
 void print_times_table(int n)
 {
 	int e, f, g;
@@ -19,11 +15,8 @@ void print_times_table(int n)
 			for  (f = 0; f <= n; f++)
 			{
 				g = f * e;
-
 				if (f == 0)
-				{
-					_putchar(k + '0');
-				}
+					_putchar(g + '0');
 				else if (g < 10 && f != 0)
 				{
 					_putchar(',');
