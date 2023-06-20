@@ -7,13 +7,11 @@
  *
  *Return: last digit of number
  */
-
 int print_last_digit(int n)
 {
 	int z;
 
 	z = n % 10;
-
 	if (z < 0)
 	{
 		z = z * -1;
