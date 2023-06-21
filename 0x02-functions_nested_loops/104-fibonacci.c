@@ -33,7 +33,7 @@ int main(void)
 
 	for (i = 92; i < 99; i++)
 	{
-		printf(",%lu", a1 + (a2 / z));
+		printf(", %lu", a1 + (a2 / z));
 		printf("%lu", a2 % z);
 		a1 = a1 + b1;
 		b1 = a1 - b1;
