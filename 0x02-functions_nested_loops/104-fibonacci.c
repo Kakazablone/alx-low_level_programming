@@ -22,6 +22,7 @@ int main(void)
 
 	for (i = 1; i < 91; i++)
 	{
+		printf(",%lu", a);
 		a = a + b;
 		b = a - b;
 	}
