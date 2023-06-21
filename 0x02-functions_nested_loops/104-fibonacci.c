@@ -37,7 +37,7 @@ int main(void)
 		a1 = a1 + b1;
 		b1 = a1 - b1;
 		a2 = a2 + b2;
-		b2 = a2 -b2;
+		b2 = a2 - b2;
 	}
 
 	printf("\n");
