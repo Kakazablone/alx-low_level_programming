@@ -27,13 +27,13 @@ int main(void)
 	}
 	b1 = (b / z);
 	b2 = (b % z);
-	a1 = (a / l);
-	a2 = (a % l);
+	a1 = (a / z);
+	a2 = (a % z);
 
-	for (i = 92, i < 99; i++)
+	for (i = 92; i < 99; i++)
 	{
-		printf(",%lu", a1 + (a2 / l));
-		printf("%lu", a2 % l);
+		printf(",%lu", a1 + (a2 / z));
+		printf("%lu", a2 % z);
 		a1 = a1 + b1;
 		b1 = a1 - b1;
 		a2 = a2 + b2;
