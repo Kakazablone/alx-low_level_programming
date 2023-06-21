@@ -9,22 +9,25 @@
 
 int main(void)
 {
-	int p = 0;
-	long q = 1, r = 2, sum = r;
+	int p;
+	unsigned long int q, r, sum, next;
 
-	while (r + q < 4000000)
+	q = 1;
+	r = 2;
+	sum = 0;
+
+	for (p = 1; p <= 33; p++)
 	{
-		r = r + q;
-
-		if (r % 2 == 0)
+		if (q < 4000000 && (q % 2) == 0)
 		{
-			sum = sum + r;
-			q = r - q;
-			p++;
+			sum = sum + q;
 		}
+		next = q + r;
+		q = r;
+		r = next;
 	}
 
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
 
 	return (0);
 }
