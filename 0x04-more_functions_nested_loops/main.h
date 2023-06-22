@@ -12,5 +12,6 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void fizz_b(int n);
+void print_triangle(int size);
 
 #endif
