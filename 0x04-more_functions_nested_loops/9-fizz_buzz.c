@@ -1,36 +1,40 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
-  *fizz_b - the test
+  *main - FizzBuzz manenos
   *
-  *@n: checks multiples
-  *
-  *Return: 0
+  *Return: 0 success
   */
 
-void fizz_b(int n)
+int main(void)
 {
-	int i;
+	int f;
 
-	for (i = 1; i <= n; i++)
+	for (f = 1; f <= 100; f++)
 	{
-		if (i % 3 == 0)
+		if (f % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
-		else if (i % 5 == 0)
+		else if (f % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (f % 3 == 0 && f % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", f);
 		}
 
+		if (f != 100)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
+	return (0);
 }
