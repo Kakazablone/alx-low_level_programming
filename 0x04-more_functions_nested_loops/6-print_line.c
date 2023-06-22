@@ -20,8 +20,8 @@ void print_line(int n)
 	{
 		for (d = 0; d < n; d++)
 		{
-			_putchar('_');
+			_putchar(95);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
