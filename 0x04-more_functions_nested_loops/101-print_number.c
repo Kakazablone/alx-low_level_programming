@@ -6,7 +6,7 @@
   *
   *@n: checks the integer to be printed
   *
-  *Return: 
+  *Return:
   */
 
 void print_number(int n)
