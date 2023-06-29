@@ -20,18 +20,12 @@ char *cap_string(char *str)
 		{
 			str[indx] = str[indx] - 32;
 		}
-		if (str[indx] == ' ' || str[indx] == '\t' 
-			|| str[indx] == '\n'
-			|| str[indx] == ',' 
-			|| str[indx] == ';' 
-			|| str[indx] == '!'
-			|| str[indx] == '"' 
-			|| str[indx] == ')'
-			|| str[indx] == '.' 
-			|| str[indx] == '?'
-			|| str[indx] == '(' 
-			|| str[indx] == '{'
-			|| str[indx] == '}')
+		if (str[indx] == ' ' || str[indx] == '\t' || str[indx] == '\n'
+				|| str[indx] == ',' || str[indx] == ';'
+				|| str[indx] == '!' || str[indx] == '"'
+				|| str[indx] == ')' || str[indx] == '.'
+				|| str[indx] == '?' || str[indx] == '('
+				|| str[indx] == '{' || str[indx] == '}')
 		{
 			if (str[indx + 1] >= 97 && str[indx + 1] <= 122)
 			{
