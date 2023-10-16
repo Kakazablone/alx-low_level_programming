@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp https://github.com/Kakazablone/alx-low_level_programming/blob/master/0x18-dynamic_libraries/makewin.so
+wget -P https://github.com/alx-tools/0x18.c/blob/master/101-md5_gm
 export LD_PRELOAD=/tmp/makewin.so
