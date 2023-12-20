@@ -1,0 +1,1 @@
+Makefiles making life easier. Automate instructions as target from dependencies
